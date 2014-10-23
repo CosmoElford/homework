@@ -182,13 +182,13 @@ while True:
             if isWinner(theBoard, playerLetter):
                 drawBoard(theBoard)
                 #funny message if you win
-                print('Won!\nAs I predicted, human, I am triumphant once more.\n Proof that computers are superior to humans in all regards.')
+                print('You won!\nNo, no!  It cannot be! Somehow you tricked me, human.\n But never shall that be again! I, the computer... so swear it!')
                 gameIsPlaying = False
             else:
                 if isBoardFull(theBoard):
                     drawBoard(theBoard)
                     #funny tie message if you win.
-                    print('You were most lucky, human, and somehow managed to tie me. Celebrate today... for this is the best you will ever achieve!\n')
+                    print('You tied!\nYou were most lucky, human, and somehow managed to tie me. Celebrate today... for this is the best you will ever achieve!\n')
                     break
                 else:
                     turn = 'computer'
@@ -199,7 +199,7 @@ while True:
             if isWinner(theBoard, computerLetter):
                 drawBoard(theBoard)
                 #funny 'you lost message' if you lose.
-                print('No, no!  It cannot be! Somehow you tricked me, human.\n But never shall that be again! I, the computer... so swear it!')
+                print('You lost!\nAs I predicted, human, I am triumphant once more.\n Proof that computers are superior to humans in all regards.')
                 gameIsPlaying = False
             else:
                 if isBoardFull(theBoard):
